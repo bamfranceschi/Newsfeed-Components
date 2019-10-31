@@ -85,6 +85,33 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+    title: 'Its that Samhain, Again!',
+    date: 'October 31st, 2019',
+    firstParagraph: `Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.`,
+
+    secondParagraph: `Cum horribilem walking dead resurgere de crazed sepulcris creaturis, zombie sicut de grave feeding iride et serpens. Pestilentia, shaun ofthe dead scythe animated corpses ipsa screams. Pestilentia est plague haec decaying ambulabat mortuos. Sicut zeder apathetic malus voodoo. Aenean a dolor plan et terror soulless vulnerum contagium accedunt, mortui iam vivam unlife. Qui tardius moveri, brid eof reanimator sed in magna copia sint terribiles undeath legionis. Alii missing oculis aliorum sicut serpere crabs nostram. Putridi braindead odores kill and infect, aere implent left four dead. `,
+
+    thirdParagraph: `Lucio fulci tremor est dark vivos magna. Expansis creepy arm yof darkness ulnis witchcraft missing carnem armis Kirkman Moore and Adlard caeruleum in locis. Romero morbo Congress amarus in auras. Nihil horum sagittis tincidunt, zombie slack-jawed gelida survival portenta. The unleashed virus est, et iam zombie mortui ambulabunt super terram. Souless mortuum glassy-eyed oculos attonitos indifferent back zom bieapoc alypse. An hoc dead snow braaaiiiins sociopathic incipere Clairvius Narcisse, an ante? Is bello mundi z?`
+  },
+  {
+    title: 'Do Folks Really Talk Like This?',
+    date: 'October 24th, 2019',
+    firstParagraph: `P'dayduhs aht hawsun around cunnin' paypuh bowee ayuhpawt Mount Dessuht over t' hawsun around, justa smidgin some wicked nummah than a faht fellers. Huck Chundah. Gohd dammah. Moosetown railed 'em whawf Shit the bed. Feed 'uh the hot suppah. ayuhpawt Ahcadiuh Saddee heatah. Queeah Allen's Coffee Brandy stove-up Powrtland Museum of Aht up t' scrod yow uns aht hawsun around.`,
+
+    secondParagraph: `The County 'Roostik nummah potatoes bluebries hawsun around Outta Staydahs swampdonkey whawf, Outta Staydahs stove up anuthah, moose what a cahd pig fat, Allen's Coffee Brandy bogan naw mistah man yut from away alkie pig fat mummah lobstah, You is sum wicked suhmart mistah man suppah owt yow uns.`,
+
+    thirdParagraph: `Bluebries Moxie door-yahd mugup. Some wicked door-yahd crunchah lobstah no-see-um grindah podunk nummah than a faht alkie justa smidgin, jeezly chimbly clammin', rig up 'Roostik well theyah.?`
+  },
+  {
+    title: 'Oh Jolly Good',
+    date: 'October 1st, 2019',
+    firstParagraph: `Pommy ipsum stew and dumps flog a dead horse could murder a pint doing my head in, pillock on a stag do twiglets macca. Pillock Weeping Angels teacakes had a barney with the inlaws jolly good 10 pence mix naff off scally, get away with ya marvelous apple and pears eton mess up the duff The Doctor, a total jessie could be a bit of a git scatterbrained chaps put me soaps back on oo ecky thump. Atrocious see a man about a dog munta done up like a kipper proper doing my nut in naff off, beefeater half-inch it a fiver whizz ee bah gum. Up North golly gosh absobloodylootely up North bossy britches baffled gallivanting around houlligan full English breakast, Doctor Who conkers Weeping Angels man and his whippet one off red telephone box throw a paddy.`,
+
+    secondParagraph: `Got a lot of brass unhand me sir lost the plot squirrel, god save the queen a reet bobbydazzler. What a load of cobblers ee bah gum The Hounds of Baskerville is she 'avin a laugh bit of a Jack the lad bow ties are cool air one's dirty linen, gob air one's dirty linen complete mare down the local a tad knows bugger all about nowt sausage roll, we'll be 'avin less of that it's me peepers bog off clock round the earhole one off. Nuthouse golly gosh ey up chuck biscuits jellied eels what a mug fake tan clotted cream a week on Sunday, bent as a nine bob note double dutch cup of tea her Majesty's pleasure at the boozer good old fashioned knees up it's just not cricket pants, full English breakast cheesed off the dog's dinner jammy git bovver boots brown sauce nigh.`,
+
+    thirdParagraph: `And bog off pot noodle the old bill working class, two weeks on't trot off t'shop toad in the whole Sherlock, the black death I could reet fancy a give you a bell. Cor blimey' narky mush scatterbrained ever so lovely whizz The Hounds of Baskerville in a pickle scarper had a barney with the inlaws whizz bugger, know your onions munta pie-eyed narky ever so lovely Bob's your uncle beefeater splendid cheerio. Bovver boots lad in the jacksy chaps stew and dumps earwig, teacakes blimey alright duck up the duff.`
   }
 ];
 
@@ -112,3 +139,53 @@ const data = [
   Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
 
 */
+
+//create parent element here
+ const parentArticlesDiv = document.querySelector('.articles');
+
+//map over array here
+
+data.map(element => {
+  parentArticlesDiv.appendChild(createArticle(element.title, element.date, element.firstParagraph, element.secondParagraph, element.thirdParagraph));
+})
+
+
+function createArticle(title, date, firstParagraph, secondParagraph, thirdParagraph) {
+
+//define new elements
+const articleDiv = document.createElement('div');
+const articleTitle = document.createElement('h2');
+const articleDate = document.createElement('p');
+const articleOnePara = document.createElement('p');
+const articleTwoPara = document.createElement('p');
+const articleThreePara = document.createElement('p');
+const articleExpand = document.createElement('span');
+
+//set up structure
+
+articleDiv.append(articleTitle, articleDate, articleOnePara, articleTwoPara, articleThreePara, articleExpand);
+
+//set class names
+
+articleDiv.classList.add('article');
+articleDate.classList.add('date');
+articleExpand.classList.add('expandButton');
+
+//textContent
+
+articleTitle.textContent = title;
+articleDate.textContent = date;
+articleOnePara.textContent = firstParagraph;
+articleTwoPara.textContent = secondParagraph;
+articleThreePara.textContent = thirdParagraph;
+articleExpand.textContent = "Read On!";
+
+//span event
+
+articleExpand.addEventListener('click', () => {
+  articleDiv.classList.toggle('article-open');
+} )
+
+return articleDiv;
+
+}
